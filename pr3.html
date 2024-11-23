@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Приклад веб-сторінки з текстовими елементами та посиланнями.">
+    <meta name="keywords" content="HTML, текстові елементи, посилання, списки, заголовки">
+    <meta name="author" content="Oleg">
+    <title>Приклад веб-сторінки</title>
+    <style>
+        body {
+            margin: 30px auto;
+            padding: 15px;
+            max-width: 1200px;
+        }
+        header, footer {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+    <h2>Praesent quis magna eu sem vulputate fermentum et et velit.</h2>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#header3-1">Phasellus imperdiet</a></li>
+        <li><a href="#header3-2">Phasellus imperdiet</a></li>
+        <li><a href="#header3-3">eget lacinia semper</a></li>
+    </ul>
+</nav>
+
+<article>
+    <section>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.</strong>
+            <em>Praesent libero. Sed cursus ante dapibus diam.</em>
+        </p>
+        <h3 id="header3-1">Nullam varius felis sit amet aliquet consectetur.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        <pre><code>Nullam dictum laoreet rutrum.</code></pre>
+    </section>
+
+    <section>
+        <h3 id="header3-2">Nullam varius felis sit amet aliquet consectetur.</h3>
+        <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p>
+        <pre><code>Nullam dictum laoreet rutrum.</code></pre>
+        <ul>
+            <li>Cras at tempor metus.</li>
+            <li>Cras at tempor metus.</li>
+            <li>Cras at tempor metus.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3 id="header3-3">Nullam varius felis sit amet aliquet consectetur.</h3>
+        <p><abbr title="Hypertext Markup Language">HTML</abbr> maximus lorem nec urna sodales, non porta turpis vestibulum.</p>
+        <ol>
+            <li>Cras at tempor metus.</li>
+            <li>Cras at tempor metus.</li>
+            <li>Cras at tempor metus.</li>
+        </ol>
+        <pre><code>Nullam dictum laoreet rutrum.</code></pre>
+    </section>
+
+    <section>
+        <p>Curabitur eget dui sit amet lectus tincidunt sollicitudin.</p>
+    </section>
+
+    <section>
+        <table>
+            <tr>
+                <th>№</th>
+                <th>Cras convallis leo nulla</th>
+            </tr>
+            <tr>
+                <td>Integer in nunc</td>
+                <td>Curabitur egestas pharetra augue</td>
+            </tr>
+            <tr>
+                <td>vel neque ultricies vestibulum</td>
+                <td>Vivamus a tortor non ligula tempor rutrum</td>
+            </tr>
+        </table>
+    </section>
+</article>
+
+<section>
+    <h2>Вбудоване відео</h2>
+    <video width="320" height="240" controls>
+        <source src="image/video.mp4" type="video/mp4">
+        Ваш браузер не підтримує відео тег.
+    </video>
+</section>
+
+<section>
+    <h2>Вбудоване аудіо</h2>
+    <audio controls>
+        <source src="image/audio.mp3" type="audio/mp3">
+        Ваш браузер не підтримує аудіо тег.
+    </audio>
+</section>
+
+<section>
+    <h2>Вбудоване зображення</h2>
+    <img src="image/image1.jpg" alt="Зображення прикладу" width="500">
+</section>
+
+<section>
+    <h2>Мапа-зображення</h2>
+    <img src="image/image2.jpg" usemap="#image-map" alt="Мапа" width="800">
+    <map name="image-map">
+        <area shape="rect" coords="50,50,400,400" alt="Область 1" href="https://ru.wikipedia.org/wiki/HTML" target="_blank">
+
+        <area shape="circle" coords="500,250,80" alt="Область 2" href="https://ru.wikipedia.org/wiki/CSS" target="_blank">
+
+        <area shape="circle" coords="300,500,40" alt="Область 3" href="https://ru.wikipedia.org/wiki/JavaScript" target="_blank">
+
+        <area shape="rect" coords="600,100,750,250" alt="Область 4" href="https://ru.wikipedia.org/wiki/PHP" target="_blank">
+    </map>
+</section>
+
+
+<footer>
+    <p class="footer-text">Nam bibendum, leo ut posuere pharetra,
+        <a href="https://khai.edu/ua/education/fakultety-i-kafedry/">lacus</a> enim dapibus turpis, ut porta purus sem nec eros.
+    </p>
+</footer>
+</body>
+</html>
