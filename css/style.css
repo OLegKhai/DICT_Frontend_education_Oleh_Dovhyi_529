@@ -1,7 +1,8 @@
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color: #f4f4f4;
+  background: linear-gradient(to right, #4CAF50, #f4f4f4), url("image/background.jpg");
+  background-size: cover;
   margin: 0;
   padding: 0;
 }
@@ -19,7 +20,7 @@ header .header-wrapper {
 }
 header .header-wrapper nav ul {
   display: flex;
-  list-style: none;
+  list-style: square inside;
 }
 header .header-wrapper nav ul li {
   margin: 0 10px;
@@ -27,6 +28,7 @@ header .header-wrapper nav ul li {
 header .header-wrapper nav ul li a {
   text-decoration: none;
   color: white;
+  font-size: 1.1rem;
 }
 header .header-wrapper nav ul li a:hover {
   text-decoration: underline;
@@ -37,7 +39,46 @@ section {
   margin: 20px auto;
   padding: 20px;
   background: white;
+  border-radius: 10px;
+  border: 2px solid #4CAF50;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4CAF50;
+}
+section p {
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  color: #333;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input[type=text], form input[type=email], form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
   border-radius: 5px;
+}
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form button:hover {
+  background-color: rgb(60.5577689243, 139.4422310757, 63.7450199203);
 }
 
 footer {
@@ -45,6 +86,21 @@ footer {
   padding: 10px 0;
   background-color: #4CAF50;
   color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  color: yellow;
+}
+a:visited {
+  color: lightgray;
+}
+a:active {
+  color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
